@@ -43,7 +43,7 @@ user_options = {
 def menu_selection():
     selection = input(menu)
     while selection != "q":
-        if selection == user_options:
+        if selection in user_options:
             selected_function = user_options[selection]
             selected_function()
         else:
